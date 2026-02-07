@@ -81,7 +81,7 @@ app.post('/add-to-queue', (req, res) => {
     const slugList = rawSlugs.split(',').map(s => s.trim()).filter(s => s !== "");
 
     movieQueue.push(...slugList);
-    console.log(`Added to queue: ${slugList.join(', ')} | Total in queue: ${movieQueue.length}`);
+    console.log(`\\n Added to queue: ${slugList.join(', ')} | Total in queue: ${movieQueue.length}`);
 
     if (!isProcessing) {
         processQueue();
