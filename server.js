@@ -37,7 +37,8 @@ app.get('/', (req, res) => {
         <body>
             <div class="container">
                 <h1>REQUEST PHIM TẠI ĐÂY</h1>
-                <div id="success">Điền slug của phim cần tải về tại đây. Slug lấy tại trang <a href="https://phim.nguonc.com/"><b>NguonC</b></a> (VD: <i>https://phim.nguonc.com/phim/tinh-yeu-bo-xit</i> => slug: tinh-yeu-bo-xit)</div>
+                <div id="success">Điền slug của phim cần tải về tại đây. Slug lấy tại trang <a style="background-color: white; color: navy; padding: 7px 10px; "
+   target="_blank" href="https://phim.nguonc.com/"><b>NguonC</b></a> (VD: <i>https://phim.nguonc.com/phim/tinh-yeu-bo-xit</i> => slug: <b>tinh-yeu-bo-xit</b>)</div>
                 <input type="text" id="slugInput" placeholder="slug-1, slug-2, slug-3" autofocus>
                 <button onclick="submitSlugs()">DOWNLOAD</button>
                 <div id="error">Bạn chưa nhập slug nào cả</div>
