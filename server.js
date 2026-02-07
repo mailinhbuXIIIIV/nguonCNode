@@ -9,7 +9,7 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 
 // --- CONFIGURATION ---
-const PORT = 3000;
+const PORT = 5109;
 const BROWSER_WS = "CHROME_REMOTE_DEBUG_PORT_HERE";
 const EXTENSION_ID = "EXTENSION_ID_HERE";
 const MOVIE_SAVE_DIR = "DOWNLOAD_FOLDER_HERE";
@@ -37,7 +37,7 @@ app.get('/', (req, res) => {
         <body>
             <div class="container">
                 <h1>REQUEST PHIM TẠI ĐÂY</h1>
-                <div id="success">Điền slug của phim cần tải về tại đây. Slug lấy tại trang <a style="background-color: white; color: navy; padding: 7px 10px; "
+                <div>Điền slug của phim cần tải về tại đây. Slug lấy tại trang <a style="background-color: white; color: navy; "
    target="_blank" href="https://phim.nguonc.com/"><b>NguonC</b></a> (VD: <i>https://phim.nguonc.com/phim/tinh-yeu-bo-xit</i> => slug: <b>tinh-yeu-bo-xit</b>)</div>
                 <input type="text" id="slugInput" placeholder="slug-1, slug-2, slug-3" autofocus>
                 <button onclick="submitSlugs()">DOWNLOAD</button>
